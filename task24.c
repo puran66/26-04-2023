@@ -1,19 +1,20 @@
 #include<stdio.h>
 
- int main(){
- 	int i,j;
- 	
- 	for(i=5;i>=1;i--){
- 		for(j=5;j>=i;j--){
- 			printf("%d",j);
-		 }
-		 for(i=5;i>=2;i--){
-	 	
-		for(j=i;j<=5;j++){
+int main(){
+	int i,j,s,k;
+	
+	for(i=5;i>=1;i--){
+		
+		for(s=1;s<i;s++){
+			printf(" ");
+		}
+		for(j=5;j>=i;j--){
 			printf("%d",j);
 		}
-		 printf("\n");
-	 }
-	 
+		for(k=i+1;k<=5;k++){
+			printf("%d",k);
+		}
+		printf("\n");
 	}
- }
+	return 0;
+}
